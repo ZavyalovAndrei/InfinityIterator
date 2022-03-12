@@ -1,11 +1,8 @@
-import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.List;
 import java.util.Random;
 
 public class Randoms implements Iterable<Integer> {
     protected Random random = new Random();
-    private List<Integer> list = new ArrayList<>();
     int min;
     int max;
     int index = 0;
@@ -15,8 +12,8 @@ public class Randoms implements Iterable<Integer> {
         this.max = max;
     }
 
-    public Randoms addToList() {
-        list.add(iterator().next());
+    public Randoms getRandom() {
+        iterator().next();
         return this;
     }
 

@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         Randoms randoms = new Randoms(90, 100)
-                .addToList();
+                .getRandom();
         for (int r : randoms) {
             System.out.println("Случайное число: " + r);
             if (r == 100) {
